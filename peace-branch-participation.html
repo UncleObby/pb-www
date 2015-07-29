@@ -1,0 +1,136 @@
+<!DOCTYPE XHTML>
+<HTML>
+<HEAD>
+	<TITLE>Peace-Branch</TITLE>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="truth, love, peace, friendship">
+	<meta name="description" content="Peace-Branch is about living the way of truth and love and encouraging other people to do the same. It is also about not having to do so alone.">
+	<LINK rel='stylesheet' href='pbmain.css' type='text/css'>
+	<SCRIPT type='text/javascript'>
+		/*set up the HTML tag for using the 'js' and 'loaded' classes for CSS to be able to differentiate */
+		document.getElementsByTagName('HTML')[0].className += " js"; //adds the js class to the first (usu. only) HTML tag
+		window.addEventListener('load',function (){document.getElementsByTagName('HTML').className += " loaded" } );
+	</SCRIPT>
+	<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<SCRIPT type='text/javascript' src='FoldingArticles.js'></SCRIPT>
+	<SCRIPT type='text/javascript' src='InfoTip.js'></SCRIPT>
+	<SCRIPT type='text/javascript' src='./peace-branch-participation.js'></SCRIPT>
+</HEAD>
+<BODY>
+<!-- Title graphic -->
+<img width=100% src='PBsplash1TM.jpg' lowsrc='PBsplah1TMsm.jpg' >
+<!-- Main menu -->
+<a name='login'><!-- target for LOG-IN link --></a>
+<div class='menu'>
+	<ul>
+		<li><a href='./index.html'>HOME</a></li>
+		<li><a href='./peace-branch-participation.html'>PARTICIPATE</a></li>
+		<li><a href='/peace-branch-connexion.html'>CONNECT</a></li>
+		<li><a href='/'>PHILOSOPHY</a></li>
+		<li><a href='/'>HISTORY</a></li>
+	</ul>
+</div><!-- -->
+<!-- left section -->
+<section class='left'>
+	<hr />
+</section> <!-- end of left section -->
+
+
+<!-- Centre section -->
+<section class='central'>
+	<hr />
+	<section class='box'>
+		<h2>log-in</h2>
+		<div id='log-in-form'>
+			<table><!-- NB does not use a <FORM> element; log-in handled by AJAX -->
+				<tr>
+					<td align=right>username</td>
+					<td><input name='l_u'></td>
+				</tr>
+				<tr>
+					<td align=right>password</td>
+					<td><input type=password name='l_p'></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><button >log-in</button></td>
+				</tr>
+			</table>
+		</div>
+		<br />
+	</section>
+	<section class='box'>
+		<hr />
+		<h2><a name='sign-up' href='#sign-up'>sign-up</a></h2>
+		<form id='sign-up-form'>
+			<table>
+				<tr><td align=right>name</td>
+					<td><input name='u_name' size=30 maxlength=64> <span class='tipInfo'>Please enter your full name here.<br></span></td>
+				</tr>
+				<tr><td align=right>email</td>
+					<td><input name='u_email' size=30 maxlength=64> <span class='tipInfo'>Please enter your email address.<br>You will be sent an account activation message to this address.</span></td>
+				</tr>
+				<tr><td align=right>country</td>
+					<td><input name='u_country' size=5 maxlength=2> <span class='tipInfo'>ISO Country Code.<br>Defaults to your ISP's country.<br>This is needed to fetch data for your postcode/zipcode.</span> <span class='country_flag'></span></td>
+				</tr>
+				<tr><td align=right id='label_u_postcode'>postcode</td>
+					<td><input name='u_postcode' size=10> <span class='tipInfo'>Your postal delivery code, used to  work out roughly where you are for use with this web-site's optional local functionality.</span></td>
+				</tr>
+				<tr><td align=right>username</td>
+					<td><input name='u_u' size=20 maxlength=32> <span class='tipInfo'>Please enter your choice of username.<br>This needs to be unique and can be up to 32 characters long.</span></td>
+				</tr>
+				<tr><td align=right>password</td>
+					<td><input name='u_p1' size=20 maxlength=32> <span class='tipInfo'>Please enter your choice of password.<br>Can be up to 32 characters long.</span></td>
+				
+				</tr>
+				<tr><td align=right>confirm pw</td>
+					<td><input name='u_p2' size=20 maxlength=32> <span class='tipInfo'>Please re-enter your password to confirm you've not mis-typed it.</span></td>
+				</tr>
+				<tr><td></td>
+					<td><button id='signupbutton'>Sign-up</button></td>
+				</tr>
+			</table>
+			<input type='checkbox' name='u_agree'>I agree to the terms of use.
+		</form>
+		</br>
+	</section>
+	<section class='box'>
+		<h2>Welcome to Peace-Branch. <br/>
+		This is just the beginning.</h2>
+	</section>
+
+</section><!-- end of centre section -->
+
+
+<!-- right section -->
+<section class='right'>
+	<hr />
+	<h3>Please enter your userID and password to log in, or click "sign-up" to register a new account.</h3>
+	<!-- tab1 default tab --><div id='tab1'>
+		<p><i>peace-branch.org</i> allows us to connect with each other around the world, whether far away, or close to home. </p>
+		<p>This web set only ever transmits your personal data over secure HTTPS.</p>
+		<p>Peace Branch is about living the way of truth and love, and encouraging other people to do the same. <b>It is also about not having to do so alone</b>. By signing-up, we can, if we wish:
+		<ul>be notified:
+			<li>when other people near by sign up</li>
+			<li>of local meetings or events</li>
+		</ul>
+		<ul>let others be notified:
+			<li>when we sign-up</li>
+			<li>of meetings or events we're planning</li>
+		</ul>
+		<ul>
+			find out Peace Branch people who:
+			<li>live near us</li>
+			<li>share common interests</li>
+		</ul>
+		</p>
+		<p>This web-site will NOT pass on our information to any third party for any purposes, except if and when it is required to do so by law.</p>
+		<p>The purposes of keeping personal data are for putting us in touch with one another and publicising events, and for producing general statistics, such as the number of people signed-up in a given country.</p>
+	</div>
+	<!-- tab2 sign-up tab --><div id='tab2'>
+	</div>
+</section> <!-- end of right section -->
+	 
+ 
+ </BODY>
+</HTML>

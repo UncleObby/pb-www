@@ -1,0 +1,56 @@
+<html>
+<head>
+ 	<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<meta charset="utf-8">
+<script>
+    $(document).ready(function() {
+    	//start with all LI hidden
+    	$('#footer').find('li').hide();
+    	//add click listener to the id='add' element to toggle the first LI
+    	$( "#add" ).click(
+    		function() {
+    			//if NO LI are hidden, hide them all, else show one at a time
+    			if ( $('#footer').find('li:hidden').size()==0 ) {
+    				//hide them all
+    				$('#footer').find('li').hide();		
+    			} else {
+    				//show the first hidden LI
+    				$('#footer').find('li:hidden').first().show('fast');
+    			}
+    		}
+    	);
+    });
+
+
+</script>
+</head>
+<body>    
+this is a test
+<button id='add'>ADD?</button>    
+<button class='flip'>FLIP</button>
+					  
+					  <footer id="footer">
+                          <ul>
+                             <li> <h2> ONE </h2>
+                                <h3> one  </h3>
+                                <p> 1</p>
+                                <p> i </p>
+
+                             </li>
+
+                             <li> <h2> TWO  </h2>
+                                <h3> two </h3>
+                                <p> 2 </p>
+                                <p> ii </p>
+                            </li>
+
+                             <li> <h2> THREE </h2>
+                                <h3> three </h3>
+                                <p> 3</p>
+                                <p> iii</p>
+                            </li>
+
+                          </ul>
+                     </footer>
+</body>
+</html>

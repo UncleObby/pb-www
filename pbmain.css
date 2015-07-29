@@ -1,0 +1,130 @@
+* {
+	-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}				
+body {
+ font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+p.mainpoint {
+ font-size: larger;
+ font-weight: bold;
+}
+p.quotation {
+ font-style: italic;
+ text-align: center;
+}
+h2 {
+ text-align: center;
+}
+hr {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+}
+blockquote {
+
+}
+span.tip {
+ font-weight: bold;
+ font-size: larger;
+}
+footer {
+ text-align: right;
+ font-size: x-small;
+ font-style: italic;
+}
+
+article {
+ padding: 1em
+}
+section.box{
+ background: #dcd;
+ padding: 1em;
+}
+section.central{
+ display: block;
+ width: 38%;
+ float: left;
+}
+section.left{
+ display: block;
+ width: 31%;
+ float: left;
+}
+section.right{
+ display: block;
+ width: 31%;
+ float: right;
+}
+/* more and less spans are created by FoldingArticles script*/
+span.more{
+	display: inline;
+	cursor: default;
+}
+span.more::after{
+	content: "...more...";
+}
+span.less{
+	display: none;
+	cursor: default;
+}
+span.less::after{
+	content: "...less...";
+}
+/* tipIcon class if for the tip icons TipIcons will insert*/
+.tipIcon {
+	font-weight:bold;
+	font-size:larger;
+	color: blue;
+}
+.tipIcon::after{
+	content: "ⓘ" /* unicode (i) */
+}
+.tipBox {
+	background-color: DarkKhaki;
+	border-style: dotted;
+	border-width: 1px;
+	border-color: DarkBrown;
+	padding: 2px;
+}
+/*menu
+*/ 
+div.menu {
+	background-color: beige;
+	padding: 2px;
+}
+div.right {
+	float: right;
+}
+div.left {
+	float: left;
+}
+div.menu ul {
+	list-style-type: none;
+	display: inline;
+}
+div.menu li {
+	display: inline;
+	padding-right: 3px;
+}
+div.menu li:hover{
+	background-color: DarkKhaki;
+}
+div.menu a {
+	color: initial;
+}
+a.menu {
+	color: initial;
+	display: inline-block;
+	padding: 2px;
+}
+a.menu:hover{
+	background-color: DarkKhaki;
+}
+.country_flag {
+    background: url("flag-sprite.png") no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 11px;
+}
